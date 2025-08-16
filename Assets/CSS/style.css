@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -54,4 +55,49 @@
 
 .gallery .gallery-items .items .img img:hover{
 transform: scaleX(-1);
+}
+
+/* paginaion*/
+
+.pagination{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pagination div{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.pagination .prev, .pagination .next{
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px ;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.pagination .prev:hover, .pagination .next:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+/* Disable prev/next buttons */
+.disable {
+    opacity: 0.5;
+    pointer-events: none; /* Prevent clicking */
 }
